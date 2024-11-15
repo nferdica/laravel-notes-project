@@ -11,4 +11,4 @@ Route::get('/about', function () {
     echo "ABout us";
 });
 
-Route::get('/main', [MainController::class, 'index']);
+Route::get('/main/{value}', [MainController::class, 'index']);
